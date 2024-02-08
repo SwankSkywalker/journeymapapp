@@ -10,11 +10,11 @@ A: journeyMap is a web application that utilizes ESRI's ArcGIS technologies comb
 
 ### Q: What technologies are used to build this app?
 
-A: journeyMap uses a custom variant of the t3 stack created by @Theo; CEO of Ping.gg, Ex-Twitch Engineer and an "awesome creator obsessed with building cool stuff :)" [his words.. and also mine :].
+A: journeyMap is built using react native. Future tech soon 🚀
 
 ## The CodeBase🗄️
 
-Typescript, ArcGIS, Prisma [for mySQL db], Clerk.js [for auth], Docker [for contain/shipment] and Vercel [for fast hosting + deployment to the edge].
+React, ArcGIS, Prisma [for mySQL db], Clerk.js [for auth], Docker [for contain/shipment] and Vercel [for fast hosting + deployment to the edge].
 
 ## Moving forward =>
 
