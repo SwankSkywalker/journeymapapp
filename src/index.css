@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: 'Unica One', 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Share Tech Mono','Unica One', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
