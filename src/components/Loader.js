@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
-import './styling/LoadingPage.css';
+import '../styling/LoadingPage.css';
 
 const LoadingPage = () => {
     const loadingRef = useRef(null);
