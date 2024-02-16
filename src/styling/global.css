@@ -1,0 +1,90 @@
+/*main app styling*/
+
+.App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 0.85s linear;
+    }
+  }
+
+  .App-header {
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #61fb6e;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/*loading page styling*/
+
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+  }
+
+  .loading-number {
+    font-size: 10rem;
+    font-weight: 200;
+    color: lightgrey;
+    margin-bottom: 20px;
+  }
+
+  .loading-bar-outer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: lightgrey;
+  }
+
+  .loading-bar-inner {
+    height: 100%;
+    background-color: black;
+    width: 0;
+  }
+
+ /*body styling*/
+
+  body {
+  margin: 0;
+  font-family: 'Share Tech Mono','Unica One', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

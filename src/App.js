@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import LoadingPage from './components/Loader.js';
 import logo from './logo.svg';
-import './App.css';
+import './styling/global.css';
 import './styling/LoadingPage.css';
 
 export default function App() {
