@@ -1,31 +1,25 @@
 # ✨Welcome✨ to journeyMap 🎴
 
-## Version: 1.07(beta)
+## Release
 
-## FAQs
+Version: 1.07( beta)
 
-### Q: What is journeyMap?
+### What is journeyMap?
 
-A: journeyMap is a web application that utilizes ESRI's ArcGIS technologies combined with Apple's securely stored location data to architect maps that visualize travel, people you meet and significant events.
-
-### Q: What technologies are used to build this app?
-
-A: journeyMap is built using react native. Future tech soon 🚀
+journeyMap is a web application that aims to utilize ArcGIS technologies combined with user entries to architect "maps" that visualize travel, people you meet and significant events during ones journey.
 
 ## The CodeBase🗄️
 
-React, ArcGIS, Prisma [for mySQL db], Clerk.js [for auth], Docker [for contain/shipment] and Vercel [for fast hosting + deployment to the edge].
+* React Native ⚛
+* Clerk.js 🔒
+* GSAP ∿
+
+more to come soon...
 
 ## Moving forward =>
 
-### The Tech
+As this is an ongoing project, I will be releasing periodic updates as more features become available (meaning as fast as I can build, test and implement them lol). I hope you like easter🥚. console.log('that's the first one')
 
-These technologies are meant to be a typesafe and secure starting point for the initial trial builds and beta versions of this application. Inevitably, more applicable technologies will become vital to our operation and our current technologies can be sectioned, modified and easily replaced within the codebase without damaging runtime.
-
-### Documentation📕
-
-Loading...
-
-## Open-Source
+### Open-Source
 
 ### 🚨Open Issues/Pull Requests🚨
