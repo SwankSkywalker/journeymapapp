@@ -24,7 +24,7 @@ const EasterEggOne = ({ unlockPosition }) => {
         <div onMouseMove={handleMouseMove}>
             {isUnlocked && <div className='rainbowRoad'>journeymap</div>}
             {/* lock open animation class */}
-            {/* <div className='lock' style={{ left: unlockPosition.x, top: unlockPosition.y}}></div> */} 
+            {<div className='lock' style={{ left: unlockPosition.x, top: unlockPosition.y}}></div>}
         </div>
     );
 };

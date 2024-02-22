@@ -20,7 +20,10 @@ export default function App() {
       {loading ? (
         <LoadingPage />//Render the Loading comp while loading
       ):(
-        <LandingPage />
+        <>
+          <LandingPage />
+          <EasterEggOne unlockPosition={unlockPosition} />
+        </>
       )}
     </div>
   );
