@@ -93,12 +93,17 @@
     color: aliceblue;
   }
 
-  /* Custom cursor transformation
-
-  .rainbowRoad {
-
+  .lock {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    /*Lock over the pupil*/
   }
-  rainbow road animation here */
+
+/*rainbow road animation here */
+
 
  /*body styling*/
 
