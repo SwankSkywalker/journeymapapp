@@ -24,7 +24,6 @@ import '../styling/global.css';
         <div className='easterOneContainer' onMouseMove={handleMouse}>
             {isUnlocked && <div className='rainbow-wave'>journeymap</div>}
             <div className='lock' style={{ left: '100px', top: '100px' }}></div>
-
         </div>
     );
 }; */
