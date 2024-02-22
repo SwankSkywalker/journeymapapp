@@ -1,31 +1,32 @@
-import React, { useState, useEffect }from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styling/global.css';
 
-const easterEggOne = () => {
-
-    const [mousePos, setMousePos] = useState({ x: null, y: null});
+const EasterEggOne = ({ unlockPosition }) => {
+    const [mousePos, setMousePos] = useState({ x: 0, y: 0});
     const [isUnlocked, setIsUnlocked] = useState(false);
 
-    const handleMouse = (event) => {
-        setMousePos({ x: event.clientX, y: event.clientY })
+    const handleMouseMove = (event) => {
+        setMousePos({ x: event.clientX, y: event.clientY });
     };
 
     useEffect(() => {
-        const lockPosition = { x: 100, y: 100}; //Replace with actual position of the "lock"
-        const isInLockArea = Math.abs(mousePos.x - lockPosition.x) < 10 && Math.abs(mousePos.y - lockPosition.y) < 10;
+        const isInLockArea =
+        Math.abs(mousePos.x - unlockPosition.x) < 10 &&
+        Math.abs(mousePos.y - unlockPosition.y) < 10;
 
         if (isInLockArea) {
             setIsUnlocked(true);
-            setTimeout(() => setIsUnlocked(false), 15000); //15 seconds animation
+            setTimeout(() => setIsUnlocked(false), 15000); //15 second animation timer
         }
-    }, [mousePos]);
+    }, [mousePos, unlockPosition]);
 
     return (
-        <div className='easterOneContainer' onMouseMove={handleMouse}>
-            {isUnlocked && <div className='rainbow-wave'>journeymap</div>}
-            <div className='lock' style={{ left: '100px', top: '100px' }}></div>
+        <div onMouseMove={handleMouseMove}>
+            {isUnlocked && <div className='rainbowRoad'>journeymap</div>}
+            {/* lock open animation class */}
+            {/* <div className='lock' style={{ left: unlockPosition.x, top: unlockPosition.y}}></div> */} 
         </div>
     );
 };
 
-export default easterEggOne;
+export default EasterEggOne;
