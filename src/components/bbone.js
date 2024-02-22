@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+//import gsap from 'gsap';
 import '../styling/global.css';
 
 const EasterEggOne = ({ unlockPosition }) => {
