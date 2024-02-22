@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import LoadingPage from './components/Loader.js';
-import LandingPage from './components/LandingPage.js';
+import LandingPage from './components/LandingPage.js'
+import EasterEggOne from './components/bbone.js';
 import './assets/jfry.jpeg';
 import './styling/global.css';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
+  const unlockPosition = { x: 635, y: 535}; //replace with actual lock position
 
   useEffect(() => {
     const timer = setTimeout(() => {
