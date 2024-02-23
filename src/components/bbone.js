@@ -4,13 +4,7 @@ import '../styling/global.css';
 
 const EasterEggOne = ({ unlockPosition }) => {
 
-    const textRef =useRef(null);
-    const [mousePos, setMousePos] = useRef({ x: 0, y: 0});
-    const [isUnlocked, setIsUnlocked] = useRef(false);
-
-    const handleMouseMove = (event) => {
-        setMousePos({ x: event.clientX, y: event.clientY });
-    };
+    const textRef = useRef(null);
 
     useEffect(() => {
         if (textRef.current) {
@@ -28,22 +22,27 @@ const EasterEggOne = ({ unlockPosition }) => {
                     delay: i * 0.1 // stagger the start of each letter
                 },0); // start all animations at the same time for a wave effect
             });
-
-        }
-        const isInLockArea =
-        Math.abs(mousePos.x - unlockPosition.x) < 10 &&
-        Math.abs(mousePos.y - unlockPosition.y) < 10;
-
-        if (isInLockArea) {
-            setIsUnlocked(true);
-            setTimeout(() => setIsUnlocked(false), 15000); //15 second animation timer
         }
     }, []);
 
     return (
-        <div onMouseMove={handleMouseMove} ref={textRef}>
-            {isUnlocked && <div className='rainbowRoad'>journeymap</div>}
-            {/* lock open animation class */}
+        <div className='rainbowRoad' ref={textRef}>
+            {<>
+                <span>J</span>
+                <span>O</span>
+                <span>U</span>
+                <span>R</span>
+                <span>N</span>
+                <span>E</span>
+                <span>Y</span>
+                <span>M</span>
+                <span>A</span>
+                <span>P</span>
+            </>}
+            {'journeymap'.split('').map((letter, index) => (
+                <span key={index} className='letter'>{letter}</span>
+                ))
+            }
             {<div className='lock' style={{ left: unlockPosition.x, top: unlockPosition.y}}></div>}
         </div>
     );
