@@ -81,7 +81,7 @@
     background-image: url(../assets/jfry.jpeg);
     background-size: cover;
     background-position: center;
-    position: relative;
+    position: absolute;
   }
 
   .landing-header {
