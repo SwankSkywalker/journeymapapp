@@ -27,22 +27,9 @@ const EasterEggOne = ({ unlockPosition }) => {
 
     return (
         <div className='rainbowRoad' ref={textRef}>
-            {<>
-                <span>J</span>
-                <span>O</span>
-                <span>U</span>
-                <span>R</span>
-                <span>N</span>
-                <span>E</span>
-                <span>Y</span>
-                <span>M</span>
-                <span>A</span>
-                <span>P</span>
-            </>}
             {'journeymap'.split('').map((letter, index) => (
                 <span key={index} className='letter'>{letter}</span>
-                ))
-            }
+            ))}
             {<div className='lock' style={{ left: unlockPosition.x, top: unlockPosition.y}}></div>}
         </div>
     );
