@@ -103,7 +103,10 @@
   }
 
 /*rainbow road animation here */
-
+  .letter {
+    display: inline-block;
+    opacity: 0;
+  }
 
  /*body styling*/
 
