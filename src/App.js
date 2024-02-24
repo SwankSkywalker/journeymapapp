@@ -7,7 +7,7 @@ import './styling/global.css';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
-  const unlockPosition = { x: 625, y: 535}; //replace with actual lock position
+  const unlockPosition = { x: 625, y: 530}; //replace with actual lock position
 
   useEffect(() => {
     const timer = setTimeout(() => {
