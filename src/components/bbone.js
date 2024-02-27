@@ -1,12 +1,42 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap'
 import '../styling/global.css';
 
 const EasterEggOne = ({ unlockPosition }) => {
-
     const textRef = useRef(null);
+    const [lockPosition, setLockPosition] = useState({ x: 0, y: 0,});
+    const [viewportSize, setViewportSize] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+    });
 
     useEffect(() => {
+        const handleResize = () => {
+            setViewportSize({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            });
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (unlockPosition.current) {
+            const unlockRef = unlockPosition.current.getBoundingClientRect();
+            setLockPosition({
+                x: unlockRef.left + unlockRef.width / 2,
+                y: unlockRef.top + unlockRef.width / 2,
+            });
+        }
+    }, [unlockPosition, viewportSize]);
+
+    useEffect(() => {
+
         if (textRef.current) {
             const tl = gsap.timeline({ repeat: -1, yoyo: true});
 
