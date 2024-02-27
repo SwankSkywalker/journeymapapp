@@ -1,10 +1,6 @@
 # ✨Welcome✨ to journeyMap 🎴
 
-## Release
-
-Version: 1.07( beta)
-
-### What is journeyMap?
+## What is journeyMap?
 
 journeyMap is a web application that aims to utilize ArcGIS technologies combined with user entries to architect "maps" that visualize travel, people you meet and significant events during ones journey.
 
