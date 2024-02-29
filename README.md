@@ -14,8 +14,4 @@ more to come soon...
 
 ## Moving forward =>
 
-As this is an ongoing project, I will be releasing periodic updates as more features become available (meaning as fast as I can build, test and implement them lol). I hope you like easter🥚. console.log('that's the first one')
-
-### Open-Source
-
-### 🚨Open Issues/Pull Requests🚨
+As this is an ongoing project, I will be releasing periodic updates as more features become available (meaning as fast as I can build, test and implement them lol). I hope you like easter🥚. Commit early, commit often.
